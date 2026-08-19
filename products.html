@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Products | Sattvic Eats</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="index.html" class="logo">
+
+<img src="images/logo.png" alt="Sattvic Eats">
+
+</a>
+
+<div class="menu-toggle" id="menu-toggle">
+
+<i class="fas fa-bars"></i>
+
+</div>
+
+<ul class="nav-links" id="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="products.html" class="active">Products</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li>
+
+<a href="cart.html">
+
+🛒 Cart (<span id="cart-count">0</span>)
+
+</a>
+
+</li>
+
+<li>
+
+<a href="products.html" class="gold-btn">
+
+Shop Now
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</header>
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="section products-banner">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>Our Products</h2>
+
+<p>
+
+Carefully selected natural foods for a healthier lifestyle.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= COFFEE ================= -->
+
+<section class="section light" id="coffee">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>Coffee Collection</h2>
+
+</div>
+
+<div class="products-grid">
+
+<div class="product-card" data-href="product.html?slug=arabica-coffee">
+
+<a href="product.html?slug=arabica-coffee" class="product-image">
+
+<img src="images/coffee.jpg" alt="Coffee">
+
+</a>
+
+<div class="product-info">
+
+<span class="product-tag">BEST SELLER</span>
+
+<h3><a href="product.html?slug=arabica-coffee">Arabica/Robusta Filter Coffee Powder</a></h3>
+
+<p>
+
+Freshly roasted premium coffee with rich aroma and authentic taste.
+
+</p>
+
+<div class="price">
+
+₹350
+
+</div>
+
+<button
+
+class="gold-btn"
+
+onclick="addToCart('Arabica/Robusta Filter Coffee Powder',350,'images/coffee.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= DRY FRUITS ================= -->
+
+<section class="section" id="dryfruits">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>Premium Dry Fruits</h2>
+
+</div>
+
+<div class="products-grid">
+
+<!-- Almond -->
+
+<div class="product-card" data-href="product.html?slug=almonds">
+
+<a href="product.html?slug=almonds" class="product-image">
+
+<img src="images/almond.jpg">
+
+</a>
+
+<div class="product-info">
+
+<h3><a href="product.html?slug=almonds">Almonds</a></h3>
+
+<p>
+
+Premium California almonds rich in nutrition.
+
+</p>
+
+<div class="price">
+
+₹420
+
+</div>
+
+<button
+
+class="gold-btn"
+
+onclick="addToCart('Almonds',420,'images/almond.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Cashew -->
+
+<div class="product-card" data-href="product.html?slug=cashews">
+
+<a href="product.html?slug=cashews" class="product-image">
+
+<img src="images/cashew.jpg">
+
+</a>
+
+<div class="product-info">
+
+<h3><a href="product.html?slug=cashews">Cashews</a></h3>
+
+<p>
+
+Crunchy premium cashews packed with goodness.
+
+</p>
+
+<div class="price">
+
+₹480
+
+</div>
+
+<button
+
+class="gold-btn"
+
+onclick="addToCart('Cashews',480,'images/cashew.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Walnut -->
+
+<div class="product-card" data-href="product.html?slug=walnuts">
+
+<a href="product.html?slug=walnuts" class="product-image">
+
+<img src="images/walnut.jpg">
+
+</a>
+
+<div class="product-info">
+
+<h3><a href="product.html?slug=walnuts">Walnuts</a></h3>
+
+<p>
+
+Healthy omega-3 rich walnuts.
+
+</p>
+
+<div class="price">
+
+₹520
+
+</div>
+
+<button
+
+class="gold-btn"
+
+onclick="addToCart('Walnuts',520,'images/walnut.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Pistachio -->
+
+<div class="product-card" data-href="product.html?slug=pistachios">
+
+<a href="product.html?slug=pistachios" class="product-image">
+
+<img src="images/pistachio.jpg">
+
+</a>
+
+<div class="product-info">
+
+<h3><a href="product.html?slug=pistachios">Pistachios</a></h3>
+
+<p>
+
+Protein-rich pistachios, naturally flavorful.
+
+</p>
+
+<div class="price">
+
+₹650
+
+</div>
+
+<button
+
+class="gold-btn"
+
+onclick="addToCart('Pistachios',650,'images/pistachio.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Raisin -->
+
+<div class="product-card" data-href="product.html?slug=raisins">
+
+<a href="product.html?slug=raisins" class="product-image">
+
+<img src="images/raisin.jpg">
+
+</a>
+
+<div class="product-info">
+
+<h3><a href="product.html?slug=raisins">Raisins</a></h3>
+
+<p>
+
+Naturally sun-dried raisins, a wholesome source of energy.
+
+</p>
+
+<div class="price">
+
+₹190
+
+</div>
+
+<button
+
+class="gold-btn"
+
+onclick="addToCart('Raisins',190,'images/raisin.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SEEDS ================= -->
+
+<section class="section light" id="seeds">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>Seeds Collection</h2>
+
+<p>
+
+Superfoods packed with natural nutrition.
+
+</p>
+
+</div>
+
+<div class="products-grid">
+
+<!-- Sunflower -->
+
+<div class="product-card" data-href="product.html?slug=sunflower-seeds">
+
+<a href="product.html?slug=sunflower-seeds" class="product-image">
+
+<img src="images/sunflower.jpg" alt="Sunflower Seeds">
+
+</a>
+
+<div class="product-info">
+
+<h3><a href="product.html?slug=sunflower-seeds">Sunflower Seeds</a></h3>
+
+<p>
+
+Crunchy seeds rich in Vitamin E and healthy fats.
+
+</p>
+
+<div class="price">
+
+₹180
+
+</div>
+
+<button class="gold-btn"
+
+onclick="addToCart('Sunflower Seeds',180,'images/sunflower.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Pumpkin -->
+
+<div class="product-card" data-href="product.html?slug=pumpkin-seeds">
+
+<a href="product.html?slug=pumpkin-seeds" class="product-image">
+
+<img src="images/pumpkin.jpg" alt="Pumpkin Seeds">
+
+</a>
+
+<div class="product-info">
+
+<h3><a href="product.html?slug=pumpkin-seeds">Pumpkin Seeds</a></h3>
+
+<p>
+
+Protein-rich seeds loaded with zinc and magnesium.
+
+</p>
+
+<div class="price">
+
+₹220
+
+</div>
+
+<button class="gold-btn"
+
+onclick="addToCart('Pumpkin Seeds',220,'images/pumpkin.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Chia -->
+
+<div class="product-card" data-href="product.html?slug=chia-seeds">
+
+<a href="product.html?slug=chia-seeds" class="product-image">
+
+<img src="images/chia.jpg" alt="Chia Seeds">
+
+</a>
+
+<div class="product-info">
+
+<h3><a href="product.html?slug=chia-seeds">Chia Seeds</a></h3>
+
+<p>
+
+Natural source of fibre and Omega-3.
+
+</p>
+
+<div class="price">
+
+₹250
+
+</div>
+
+<button class="gold-btn"
+
+onclick="addToCart('Chia Seeds',250,'images/chia.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Melon -->
+
+<div class="product-card" data-href="product.html?slug=melon-seeds">
+
+<a href="product.html?slug=melon-seeds" class="product-image">
+
+<img src="images/melon.jpg" alt="Melon Seeds">
+
+</a>
+
+<div class="product-info">
+
+<h3><a href="product.html?slug=melon-seeds">Melon Seeds</a></h3>
+
+<p>
+
+Delicately flavored seeds rich in protein and minerals.
+
+</p>
+
+<div class="price">
+
+₹210
+
+</div>
+
+<button class="gold-btn"
+
+onclick="addToCart('Melon Seeds',210,'images/melon.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Flax -->
+
+<div class="product-card" data-href="product.html?slug=flax-seeds">
+
+<a href="product.html?slug=flax-seeds" class="product-image">
+
+<img src="images/flax.jpg" alt="Flax Seeds">
+
+</a>
+
+<div class="product-info">
+
+<h3><a href="product.html?slug=flax-seeds">Flax Seeds</a></h3>
+
+<p>
+
+Heart-friendly seeds high in Omega-3 and fibre.
+
+</p>
+
+<div class="price">
+
+₹160
+
+</div>
+
+<button class="gold-btn"
+
+onclick="addToCart('Flax Seeds',160,'images/flax.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Sesame -->
+
+<div class="product-card" data-href="product.html?slug=sesame-seeds">
+
+<a href="product.html?slug=sesame-seeds" class="product-image">
+
+<img src="images/sesame.jpg" alt="Sesame Seeds">
+
+</a>
+
+<div class="product-info">
+
+<h3><a href="product.html?slug=sesame-seeds">Sesame Seeds</a></h3>
+
+<p>
+
+Traditional seeds rich in calcium and iron.
+
+</p>
+
+<div class="price">
+
+₹170
+
+</div>
+
+<button class="gold-btn"
+
+onclick="addToCart('Sesame Seeds',170,'images/sesame.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= HEALTH BLENDS ================= -->
+
+<section class="section" id="featured">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>Health Blends</h2>
+
+<p>
+
+Traditional recipes made for everyday wellness.
+
+</p>
+
+</div>
+
+<div class="products-grid">
+
+<!-- Badam Powder -->
+
+<div class="product-card" data-href="product.html?slug=badam-powder">
+
+<a href="product.html?slug=badam-powder" class="product-image">
+
+<img src="images/badam.jpg" alt="Badam Powder">
+
+</a>
+
+<div class="product-info">
+
+<span class="product-tag">
+
+POPULAR
+
+</span>
+
+<h3><a href="product.html?slug=badam-powder">Badam Powder</a></h3>
+
+<p>
+
+Nutritious almond drink mix for the whole family.
+
+</p>
+
+<div class="price">
+
+₹250
+
+</div>
+
+<button class="gold-btn"
+
+onclick="addToCart('Badam Powder',250,'images/badam.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Laddu -->
+
+<div class="product-card" data-href="product.html?slug=dry-fruit-laddu">
+
+<a href="product.html?slug=dry-fruit-laddu" class="product-image">
+
+<img src="images/laddu.jpg" alt="Seeds and Dry Fruits Ladoo">
+
+</a>
+
+<div class="product-info">
+
+<span class="product-tag">
+
+HEALTHY
+
+</span>
+
+<h3><a href="product.html?slug=dry-fruit-laddu">Seeds and Dry Fruits Ladoo</a></h3>
+
+<p>
+
+Traditional laddus made with premium dry fruits and seeds.
+
+</p>
+
+<div class="price">
+
+₹300
+
+</div>
+
+<button class="gold-btn"
+
+onclick="addToCart('Seeds and Dry Fruits Ladoo',300,'images/laddu.jpg')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<div class="footer-brand">
+
+<a href="#" class="footer-logo-link" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
+<img src="images/logo.png" alt="Sattvic Eats">
+</a>
+
+</div>
+
+<p>
+
+Pure Food.<br>
+
+Calm Living.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Categories</h3>
+
+<ul>
+
+<li>Coffee</li>
+
+<li>Dry Fruits</li>
+
+<li>Seeds</li>
+
+<li>Health Blends</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Follow Us</h3>
+
+<div class="social-icons">
+
+<a href="https://www.instagram.com/sattviceats?igsh=YjdpbDJ5eXR1YnZq" target="_blank">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+<a href="https://www.facebook.com/SattvicEats/" target="_blank">
+
+<i class="fab fa-facebook-f"></i>
+
+</a>
+
+<a href="https://wa.me/919535476030?text=Hi%20Sattvic%20Eats%2C%20I%20would%20like%20to%20place%20an%20order.%20Please%20help%20me%20with%20this." target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+<p class="footer-gst">GSTIN: 29CFPPR1098D1ZX</p>
+
+<div class="footer-fssai">
+<img src="images/fssai-logo.jpg" alt="FSSAI Logo">
+<span>Lic. No: 21225008005219</span>
+</div>
+
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="footer-policy-links">
+<a href="privacy-policy.html">Privacy Policy</a>
+<span>|</span>
+<a href="shipping-policy.html">Shipping Policy</a>
+<span>|</span>
+<a href="return-policy.html">Return &amp; Refund Policy</a>
+</div>
+
+<p class="copyright">
+
+© 2026 Sattvic Eats. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+duration:1000,
+
+once:true
+
+});
+
+</script>
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button id="back-to-top" aria-label="Back to top">
+<i class="fas fa-arrow-up"></i>
+</button>
+
+</body>
+</html>
